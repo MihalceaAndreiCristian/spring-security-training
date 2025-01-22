@@ -1,4 +1,4 @@
-package ro.amihalcea.SpringSecurity;
+package ro.amihalcea.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.web.bind.annotation.GetMapping;

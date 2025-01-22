@@ -1,4 +1,4 @@
-package ro.amihalcea.SpringSecurity;
+package ro.amihalcea;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
