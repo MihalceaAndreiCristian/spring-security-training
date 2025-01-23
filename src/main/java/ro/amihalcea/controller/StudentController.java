@@ -1,5 +1,7 @@
 package ro.amihalcea.controller;
 
+import jakarta.servlet.http.HttpServletRequest;
+import org.springframework.security.web.csrf.CsrfToken;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,6 +23,11 @@ public class StudentController {
     public List<StudentModel> getStudentList(){
         return studentModelList;
     }
+
+//    @GetMapping("csrf-token")
+//    public CsrfToken getCSRFToken(HttpServletRequest request){
+//        return (CsrfToken) request.getAttribute("_csrf");
+//    }
 
     @PostMapping("students")
     public void addStudent(@RequestBody StudentModel student){
