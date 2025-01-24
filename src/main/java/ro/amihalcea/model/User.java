@@ -1,11 +1,16 @@
 package ro.amihalcea.model;
 
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+
+import static jakarta.persistence.GenerationType.IDENTITY;
 
 @Entity
 @Data
@@ -16,6 +21,7 @@ import lombok.ToString;
 public class User {
 
     @Id
+    @GeneratedValue(strategy = IDENTITY)
     private int id;
     private String username;
     private String password;
